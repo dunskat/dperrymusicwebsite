@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D Perry Music</title>
+  <meta name="description" content="Official site of D Perry — music, releases, and more." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="D Perry Music" />
+  <meta property="og:description" content="Official site of D Perry — music, releases, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dperrymusic.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#top" class="nav__brand">D&nbsp;PERRY</a>
+    <nav class="nav__links">
+      <a href="#music">Music</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">— Official Site —</p>
+      <h1 class="hero__title">D&nbsp;PERRY</h1>
+      <p class="hero__tagline">New music out now. Listen below.</p>
+      <div class="hero__cta">
+        <a href="#music" class="btn btn--primary">Listen</a>
+        <a href="#about" class="btn btn--ghost">About</a>
+      </div>
+    </div>
+    <a href="#music" class="hero__scroll" aria-label="Scroll to music">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- Music -->
+  <section id="music" class="section">
+    <div class="section__head">
+      <h2 class="section__title">Music</h2>
+      <p class="section__sub">Stream the latest releases.</p>
+    </div>
+
+    <div class="embeds">
+      <!--
+        ============================================================
+        HOW TO ADD YOUR MUSIC
+        ============================================================
+        Replace the placeholders below with your own embed codes.
+
+        SPOTIFY:  open the artist/album/track in Spotify → Share →
+                  Embed → copy the <iframe>. Paste it in place of one
+                  of the .embed blocks below.
+
+        APPLE MUSIC / SOUNDCLOUD / YOUTUBE / BANDCAMP all have a
+        similar "Share → Embed" option that gives you an <iframe>.
+        ============================================================
+      -->
+
+      <!-- Placeholder embed 1 (replace src with your Spotify embed URL) -->
+      <div class="embed">
+        <iframe
+          title="Featured release"
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/artist/4tZwfgrHOc3mvqYlEYSvVi?utm_source=generator&theme=0"
+          width="100%" height="352" frameborder="0"
+          allowfullscreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>
+
+      <!-- Placeholder embed 2 (duplicate this block for more releases) -->
+      <div class="embed embed--placeholder">
+        <div class="embed__placeholder">
+          <span class="embed__icon">♪</span>
+          <p>Add another release here</p>
+          <small>Paste a Spotify, Apple Music, SoundCloud, or YouTube embed into <code>index.html</code>.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section--about">
+    <div class="about">
+      <div class="about__photo">
+        <!-- Replace with your photo: drop a file in /assets and update src -->
+        <div class="about__photo-placeholder">
+          <span>Your photo</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <h2 class="section__title">About</h2>
+        <p>
+          Write your bio here. Who you are, where you're from, the kind of
+          music you make, and what you're working on now. Keep it a few short
+          paragraphs — enough to give listeners a feel for the artist behind
+          the music.
+        </p>
+        <p>
+          You can edit this text directly in <code>index.html</code> under the
+          <em>About</em> section. Add a real photo by dropping an image into the
+          <code>assets/</code> folder and pointing the image source at it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="footer">
+    <h2 class="footer__title">Get in touch</h2>
+    <p class="footer__sub">Booking &amp; inquiries</p>
+    <a class="footer__email" href="mailto:danieldpperry@gmail.com">danieldpperry@gmail.com</a>
+
+    <div class="socials">
+      <!-- Update these links with your real profiles -->
+      <a href="#" aria-label="Spotify" class="social">Spotify</a>
+      <a href="#" aria-label="Instagram" class="social">Instagram</a>
+      <a href="#" aria-label="YouTube" class="social">YouTube</a>
+      <a href="#" aria-label="Apple Music" class="social">Apple Music</a>
+    </div>
+
+    <p class="footer__copy">&copy; <span id="year"></span> D Perry. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
