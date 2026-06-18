@@ -3,137 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D Perry Music</title>
-  <meta name="description" content="Official site of D Perry — music, releases, and more." />
+  <title>D Perry — Music</title>
+  <meta name="description" content="Official site of D Perry — artist, producer. New music out now." />
 
-  <!-- Open Graph / social preview -->
-  <meta property="og:title" content="D Perry Music" />
-  <meta property="og:description" content="Official site of D Perry — music, releases, and more." />
+  <meta property="og:title" content="D Perry — Music" />
+  <meta property="og:description" content="Official site of D Perry — artist, producer. New music out now." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dperrymusic.com" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated background -->
-  <div class="bg-gradient" aria-hidden="true"></div>
-  <div class="bg-noise" aria-hidden="true"></div>
+  <!-- Backgrounds -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="bg-grain" aria-hidden="true"></div>
 
-  <!-- Navigation -->
-  <header class="nav">
-    <a href="#top" class="nav__brand">D&nbsp;PERRY</a>
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">D&thinsp;PERRY<span class="nav__dot">.</span></a>
     <nav class="nav__links">
-      <a href="#music">Music</a>
-      <a href="#about">About</a>
-      <a href="#connect">Connect</a>
+      <a href="#music"><span>01</span> Music</a>
+      <a href="#about"><span>02</span> About</a>
+      <a href="#connect"><span>03</span> Connect</a>
     </nav>
+    <a href="#music" class="nav__cta">Listen</a>
   </header>
 
   <!-- Hero -->
   <section id="top" class="hero">
-    <div class="hero__inner">
-      <p class="hero__eyebrow">— Official Site —</p>
-      <h1 class="hero__title">D&nbsp;PERRY</h1>
-      <p class="hero__tagline">New music out now. Listen below.</p>
-      <div class="hero__cta">
-        <a href="#music" class="btn btn--primary">Listen</a>
-        <a href="#about" class="btn btn--ghost">About</a>
+    <div class="hero__meta hero__meta--tl reveal">
+      <span class="pulse"></span> New single out now
+    </div>
+
+    <div class="hero__center">
+      <p class="hero__eyebrow reveal">Artist &nbsp;·&nbsp; Producer</p>
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:.05s">D&nbsp;PERRY</span>
+      </h1>
+      <p class="hero__tagline reveal" style="--d:.15s">
+        Sounds for late nights and long drives.
+      </p>
+      <div class="hero__cta reveal" style="--d:.22s">
+        <a href="#music" class="btn btn--primary">
+          <span>Listen now</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#about" class="btn btn--ghost">The story</a>
       </div>
     </div>
-    <a href="#music" class="hero__scroll" aria-label="Scroll to music">
-      <span></span>
-    </a>
+
+    <div class="hero__meta hero__meta--br reveal">
+      <span>Independent</span>
+      <span>Est. MMXXV</span>
+    </div>
+
+    <a href="#music" class="hero__scroll" aria-label="Scroll down">Scroll</a>
   </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>New single out now</span><span class="marquee__star">✦</span>
+      <span>Stream everywhere</span><span class="marquee__star">✦</span>
+      <span>New single out now</span><span class="marquee__star">✦</span>
+      <span>Stream everywhere</span><span class="marquee__star">✦</span>
+      <span>New single out now</span><span class="marquee__star">✦</span>
+      <span>Stream everywhere</span><span class="marquee__star">✦</span>
+    </div>
+  </div>
 
   <!-- Music -->
   <section id="music" class="section">
-    <div class="section__head">
-      <h2 class="section__title">Music</h2>
-      <p class="section__sub">Stream the latest releases.</p>
+    <div class="section__label reveal">
+      <span class="section__num">01</span>
+      <span class="section__name">Music</span>
+      <span class="section__rule"></span>
     </div>
 
-    <div class="embeds">
-      <!--
-        ============================================================
-        HOW TO ADD YOUR MUSIC
-        ============================================================
-        Replace the placeholders below with your own embed codes.
-
-        SPOTIFY:  open the artist/album/track in Spotify → Share →
-                  Embed → copy the <iframe>. Paste it in place of one
-                  of the .embed blocks below.
-
-        APPLE MUSIC / SOUNDCLOUD / YOUTUBE / BANDCAMP all have a
-        similar "Share → Embed" option that gives you an <iframe>.
-        ============================================================
-      -->
-
-      <!-- Placeholder embed 1 (replace src with your Spotify embed URL) -->
-      <div class="embed">
-        <iframe
-          title="Featured release"
-          style="border-radius:12px"
-          src="https://open.spotify.com/embed/artist/4tZwfgrHOc3mvqYlEYSvVi?utm_source=generator&theme=0"
-          width="100%" height="352" frameborder="0"
-          allowfullscreen
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
+    <!-- Featured release -->
+    <div class="featured">
+      <div class="featured__art reveal">
+        <!-- Replace this block with your cover art:
+             <img src="assets/cover.jpg" alt="Latest release cover" /> -->
+        <div class="featured__art-ph">
+          <span>Cover art</span>
+        </div>
+        <span class="featured__badge">Latest release</span>
       </div>
 
-      <!-- Placeholder embed 2 (duplicate this block for more releases) -->
-      <div class="embed embed--placeholder">
-        <div class="embed__placeholder">
-          <span class="embed__icon">♪</span>
-          <p>Add another release here</p>
-          <small>Paste a Spotify, Apple Music, SoundCloud, or YouTube embed into <code>index.html</code>.</small>
+      <div class="featured__body reveal" style="--d:.1s">
+        <p class="featured__kicker">Single</p>
+        <h2 class="featured__title">Your Latest Track</h2>
+        <p class="featured__desc">
+          Drop a line about the release here — the vibe, the story, who it's for.
+          Edit this in <code>index.html</code> under the <em>Featured</em> block.
+        </p>
+
+        <div class="featured__links">
+          <a href="#" class="plink">Spotify</a>
+          <a href="#" class="plink">Apple&nbsp;Music</a>
+          <a href="#" class="plink">YouTube</a>
+          <a href="#" class="plink">SoundCloud</a>
+        </div>
+
+        <!--
+          ADD YOUR MUSIC: open the release in Spotify → Share → Embed,
+          copy the <iframe>, and replace the one below. Apple Music,
+          SoundCloud, YouTube & Bandcamp all have the same Share → Embed.
+        -->
+        <div class="featured__player">
+          <iframe
+            title="Featured release"
+            style="border-radius:14px"
+            src="https://open.spotify.com/embed/artist/4tZwfgrHOc3mvqYlEYSvVi?utm_source=generator&theme=0"
+            width="100%" height="152" frameborder="0"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
         </div>
       </div>
+    </div>
+
+    <!-- More releases -->
+    <div class="releases">
+      <article class="release reveal">
+        <div class="release__art"><span>♪</span></div>
+        <div class="release__meta">
+          <h3>Track Two</h3>
+          <p>Single · 2025</p>
+        </div>
+        <a href="#" class="release__play" aria-label="Play Track Two">→</a>
+      </article>
+
+      <article class="release reveal" style="--d:.06s">
+        <div class="release__art"><span>♪</span></div>
+        <div class="release__meta">
+          <h3>Track Three</h3>
+          <p>Single · 2025</p>
+        </div>
+        <a href="#" class="release__play" aria-label="Play Track Three">→</a>
+      </article>
+
+      <article class="release release--add reveal" style="--d:.12s">
+        <div class="release__meta release__meta--add">
+          <h3>Add a release</h3>
+          <p>Duplicate this card in <code>index.html</code></p>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="section section--about">
+  <section id="about" class="section">
+    <div class="section__label reveal">
+      <span class="section__num">02</span>
+      <span class="section__name">About</span>
+      <span class="section__rule"></span>
+    </div>
+
+    <p class="about__statement reveal">
+      “Write a short, striking line about your music here — the kind of sentence
+      that tells someone what you're about in one breath.”
+    </p>
+
     <div class="about">
-      <div class="about__photo">
-        <!-- Replace with your photo: drop a file in /assets and update src -->
-        <div class="about__photo-placeholder">
-          <span>Your photo</span>
-        </div>
+      <div class="about__photo reveal">
+        <!-- Replace with your photo:
+             <img src="assets/portrait.jpg" alt="D Perry" /> -->
+        <div class="about__photo-ph"><span>Your photo</span></div>
       </div>
-      <div class="about__text">
-        <h2 class="section__title">About</h2>
+
+      <div class="about__text reveal" style="--d:.1s">
         <p>
-          Write your bio here. Who you are, where you're from, the kind of
-          music you make, and what you're working on now. Keep it a few short
-          paragraphs — enough to give listeners a feel for the artist behind
-          the music.
+          Write your bio here. Who you are, where you're from, and the kind of
+          music you make. A few short paragraphs is plenty — enough to give
+          listeners a feel for the artist behind the sound.
         </p>
         <p>
-          You can edit this text directly in <code>index.html</code> under the
-          <em>About</em> section. Add a real photo by dropping an image into the
-          <code>assets/</code> folder and pointing the image source at it.
+          Edit this text in <code>index.html</code> under the <em>About</em>
+          section, and drop a portrait into the <code>assets/</code> folder.
         </p>
+
+        <ul class="about__facts">
+          <li><span>Role</span> Artist · Producer</li>
+          <li><span>Based</span> Your city</li>
+          <li><span>For fans of</span> Add some names</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- Connect / Footer -->
   <footer id="connect" class="footer">
-    <h2 class="footer__title">Connect</h2>
-    <p class="footer__sub">Follow &amp; listen</p>
-
-    <div class="socials">
-      <!-- Update these links with your real profiles -->
-      <a href="#" aria-label="Spotify" class="social">Spotify</a>
-      <a href="#" aria-label="Instagram" class="social">Instagram</a>
-      <a href="#" aria-label="YouTube" class="social">YouTube</a>
-      <a href="#" aria-label="Apple Music" class="social">Apple Music</a>
+    <div class="section__label reveal">
+      <span class="section__num">03</span>
+      <span class="section__name">Connect</span>
+      <span class="section__rule"></span>
     </div>
 
-    <p class="footer__copy">&copy; <span id="year"></span> D Perry. All rights reserved.</p>
+    <a href="#top" class="footer__word reveal">D&thinsp;PERRY</a>
+
+    <ul class="footer__socials reveal" style="--d:.1s">
+      <li><a href="#">Spotify <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a href="#">Instagram <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a href="#">YouTube <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a href="#">Apple Music <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+    </ul>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year"></span> D Perry</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
